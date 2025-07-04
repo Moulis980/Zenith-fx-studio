@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ZENITH FX STUDIO</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <header>
+    <img src="{{ url_for('static', filename='images/Zenith logo.jpg') }}" alt="Zenith FX Studio Logo" />
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#team">Team</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>ZENITH FX STUDIO</h1>
+    <p>Next-Gen Visuals. Today. We specialize in editing, VFX, 3D design, and more.</p>
+  </section>
+
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="service-list">
+      <div class="service"><h3>Editing</h3><p>High-quality video editing with cinematic impact.</p></div>
+      <div class="service"><h3>Motion Graphics</h3><p>Dynamic animations and effects that move audiences.</p></div>
+      <div class="service"><h3>Graphic Design</h3><p>Creative and unique visuals that define brands.</p></div>
+      <div class="service"><h3>Posters</h3><p>Bold poster designs that grab attention and inform.</p></div>
+      <div class="service"><h3>VFX</h3><p>Professional-grade visual effects for films and promos.</p></div>
+      <div class="service"><h3>3D Modeling</h3><p>Realistic 3D assets for any platform or concept.</p></div>
+      <div class="service"><h3>Logo Making</h3><p>Logos that leave a lasting impression.</p></div>
+      <div class="service"><h3>UI/UX Designing</h3><p>Intuitive and user-centered interface designs for web and mobile apps.</p></div>
+    </div>
+  </section>
+
+  <section class="team" id="team">
+    <h2>Meet the Team</h2>
+    <div class="team-members">
+      <div class="member"><h3>Abishek</h3><p>Founder & CEO</p></div>
+      <div class="member"><h3>Gowtham</h3><p>Personal Advisor</p></div>
+      <div class="member"><h3>Sanjai</h3><p>Social Media Influencer</p></div>
+      <div class="member"><h3>Vignesh</h3><p>Business Analyst</p></div>
+      <div class="member"><h3>Iniyan</h3><p>Editor</p></div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form action="mailto:zenithfxstudio@gmail.com" method="post" enctype="text/plain">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required />
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="contact-details">
+      <p><strong>Email Id:</strong> <a class="contact-link" href="mailto:zenithfxstudio@gmail.com">zenithfxstudio@gmail.com</a></p>
+      <p><strong>Instagram Page:</strong> <a class="contact-link" href="https://www.instagram.com/zenith_fx_studio" target="_blank">@zenith_fx_studio</a></p>
+      <p><strong>Phone No:</strong> <span class="contact-link">+91 76049 50103</span></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/zenith_fx_studio/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>&copy; 2025 Zenith FX Studio. All rights reserved.</p>
+  </footer>
+</body>
+</html>
